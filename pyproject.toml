@@ -11,7 +11,6 @@ dependencies = [
     'numpy',
     'scipy',
     'matplotlib',
-    'Cython'
 ]
 
 [project.optional-dependencies]
@@ -20,9 +19,13 @@ comparison = [
     'gurobi>=6.5.0',
     'mosek>=7'
     ]
-
+build = [
+'setuptools',
+'wheel',
+'Cython',
+'numpy > 2'
+]
 
 [build-system]
 requires = ['setuptools', 'wheel', 'Cython', 'numpy>2']
 build-backend = "setuptools.build_meta"
-include-package-data = false
