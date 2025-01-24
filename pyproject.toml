@@ -1,0 +1,28 @@
+[project]
+name = "oasis-deconv"
+version = "0.2.0"
+description = "Fast algorithm for deconvolution of neural calcium imaging traces"
+authors = [
+    {name="Johannes Friedrich", email="johannes.friedrich@alleninstitute.org"},
+]
+readme = "README.md"
+requires-python = ">=3.5, <=3.13"
+dependencies = [
+    'numpy',
+    'scipy',
+    'matplotlib',
+    'Cython'
+]
+
+[project.optional-dependencies]
+comparison = [
+    'cvxpy>=0.3.6',
+    'gurobi>=6.5.0',
+    'mosek>=7'
+    ]
+
+
+[build-system]
+requires = ['setuptools', 'wheel', 'Cython', 'numpy>2']
+build-backend = "setuptools.build_meta"
+include-package-data = false
