@@ -2,10 +2,10 @@
 # run with:         python setup.py build_ext -i
 # clean up with:    python setup.py clean --all
 
-from Cython.Build import cythonize
 import numpy as np
 from setuptools.extension import Extension
 from setuptools import find_packages, setup
+from Cython.Build import cythonize
 
 
 ext_modules = [Extension("oasis.oasis_methods",
