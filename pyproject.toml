@@ -16,8 +16,7 @@ dependencies = [
 [project.optional-dependencies]
 comparison = [
     'cvxpy>=0.3.6',
-    'gurobi>=6.5.0',
-    'mosek>=7'
+    'ecos'
     ]
 build = [
 'setuptools',
